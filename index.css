@@ -42,6 +42,12 @@ header nav a{
     width: 30px;
     height: 30px;
   }
+  .this-section{
+    border: 1px solid black;
+    font-size: 0.7rem;
+  }
+  
+
   h2 {
     font-family: Arial, sans-serif;
     font-weight: bold;
@@ -76,5 +82,45 @@ header nav a{
     background-color:red;
     color:white;
     border-radius: 0.3rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem; 
+
 
 }
+.suggestions{
+    border: 1px solid black;
+    font-size:0.7rem;
+
+h3{
+    font-size: 12px;
+    font-weight: bold;
+    gap:20px;
+    
+}
+.popular-movies{
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 8px;
+  
+}
+.Suggestion-films-information{
+    text-align: center;
+    border: 1px solid black;
+
+}
+.popular-movies h4{
+    font-weight: bold;
+}
+.film-duration{
+    font-weight: bold;
+}
+h5{
+    font-size:12px;
+    font-weight: bold;
+    gap:20px;
+
+}
+
