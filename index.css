@@ -39,6 +39,42 @@ header nav a{
   
   .avatar {
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
+  h2 {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+.user-rating{
+    color:red;
+    margin: 0.2rem;
+}
+.ımdb-point{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin:0.2rem
+    
+    
+}
+.film-age{
+    border: 1px solid;
+    border-radius:0.4rem;
+    padding: 0.2;
+    margin: 0.2rem;
+}
+.film-duration{
+    font-family:Helvetica, sans-serif;
+    font-weight: bold;
+    margin:0.2rem
+}
+.film-details span{
+    color: red;
+}
+
+ button{
+    background-color:red;
+    color:white;
+    border-radius: 0.3rem;
+
+}
