@@ -123,4 +123,44 @@ h5{
     gap:20px;
 
 }
+footer{
+  padding: 1px;
+  margin: 1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 
+}
+.footer-a nav a{
+    flex-direction: left;
+    font-size: 10px;
+    text-decoration: none;
+    color: gray;
+    align-items: center;
+
+}
+.footer-a p{
+    font-size: 10px;
+}
+.social-media {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.social-media h6{
+    font-size: 0.5rem; 
+
+}
+.mobile-apps {
+    display: flex; 
+    align-items: center;
+    gap: 10px; 
+    font-size: 0.8rem; 
+}
+.mobile-apps i {
+    font-size: 1rem; 
+    color: gray; 
+}
