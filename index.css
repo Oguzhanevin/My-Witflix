@@ -1,176 +1,252 @@
-
 body{
-    margin:0;
+    
+    margin: 0;
     padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin:0.5rem;
-    padding: 1rem;
-}
-header h1{
-    color:red;
-}
-header nav a{
-    color:grey;
-    text-decoration: none;
-    gap:0.5rem
-}
-.header-section {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .header-section input[type="text"] {
-    padding: 5px;
-    font-size: 14px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    background-image: url('https://cdn-icons-png.flaticon.com/512/622/622669.png'); 
-    background-size: 12px; 
-    background-repeat: no-repeat;
-    background-position: 170px center; 
-  }
-  
-  .avatar {
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-  }
-  .this-section{
-    border: 1px solid black;
-    font-size: 0.7rem;
-  }
-  
-
-  h2 {
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-}
-.user-rating{
-    color:red;
-    margin: 0.2rem;
-}
-.ımdb-point{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    margin:0.2rem
-    
     
 }
-.film-age{
-    border: 1px solid;
-    border-radius:0.4rem;
-    padding: 0.2;
-    margin: 0.2rem;
+h1{
+    color: red;
+    margin: 0;
+    flex:1;
+
 }
-.film-duration{
-    font-family:Helvetica, sans-serif;
-    font-weight: bold;
-    margin:0.2rem
+
+h2{
+    text-transform: uppercase;
 }
-.film-details span{
+nav a:hover{
     color: red;
 }
 
- button{
-    background-color:red;
-    color:white;
-    border-radius: 0.3rem;
-    padding: 0.5rem 1rem;
-    font-size: 0.8rem; 
-
-
+.fa-solid,.fa-regular{
+    color:red;
 }
-.suggestions{
-    border: 1px solid black;
-    font-size:0.7rem;
+.search-icon{
+    margin-left: -2rem;
+    color: black;
+}
 
-h3{
-    font-size: 12px;
-    font-weight: bold;
-    gap:20px;
+ header .user-panel{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: .5rem;
+    justify-content: flex-end;
+}
+header nav{
+    justify-content: center;
+    display: flex;
+    gap: 2rem;
+}
+header nav a{
+    color: rgb(73, 72, 72);
+    text-decoration: none;
+}
+header .user-panel img{
+    border-radius: 100px;
+    width: 2.5rem;
+}
+.user-panel input{
+    padding: .3rem;
+    width: 7rem;
+    border-radius: .5rem;
+    margin-right: .3rem;
+}
+main{
+    aspect-ratio: 5/3;
+    border: 1px solid black;
+    padding:1rem ;
+    margin: 2rem auto;
+    display: flex;  
+    align-items: center;
     
 }
-.popular-movies{
-    border: 1px solid blue;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: center;
-    font-size: 8px;
+
+.imdbScore{
+    font-weight: bold;
+}
+.movie-details span{
+    color: red;
+    font-weight: bold;
+}
+.movie-details p{
+    margin: .5rem;
+}
+button{
+   color: white;
+   background: red;
+   padding: .6rem 2.1rem;
+   border-radius: 9px;
+   border: 1px solid;
+   font-size: 1.2rem;
+
+}
+.fa-play{
+    color: white;
+}
+
+.main-movie{
+    width: 60%;
   
+  
+    
+
 }
-.Suggestion-films-information{
-    text-align: center;
+.content-rating{
     border: 1px solid black;
-
+    padding: .1rem ;
+    border-radius: .3rem;
+    margin: 0.5rem;
 }
-.popular-movies h4{
+
+.movie-duration{
     font-weight: bold;
 }
-.film-duration{
-    font-weight: bold;
+button i{
+    margin-left: -1rem;
+    margin-right: .5rem;
 }
-h5{
-    font-size:12px;
-    font-weight: bold;
-    gap:20px;
+
+/*suggestion*/
+
+.suggestion-row-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
 }
-footer{
-  padding: 1px;
-  margin: 1px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-
-}
-.footer-a nav a{
-    flex-direction: left;
-    font-size: 10px;
+.suggestion-row-title a{
     text-decoration: none;
     color: gray;
-    align-items: center;
+}
+.suggestion-row-title a:hover{
+    
+    color: red;
+}
+.suggestion-row-title h3{
+margin: 1rem;
 
 }
-.footer-a p{
-    font-size: 10px;
+.movie-card{
+    border: 1px solid black;
+    min-width:250px ;
+    border-radius: .1rem;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    margin: 1rem;
 }
-.social-media {
+.movie-card h4{
+    margin: 1rem 0;
+}
+.movie-card .content-rating{
+    margin-left: 0;
+}
+.movie-detail-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.movie-card button{
+    
+    padding: .5rem 1.8rem;
+    border-radius: .5rem;
+    font-size: 1.2rem;
+ 
+ }
+
+.movie-card button i{
+    margin-left: -.8rem;
+    margin-right: .3rem;
+ }
+ .suggestion-movies{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    gap: 5px;
-}
+    justify-content: space-around;
+    
+ }
+ /*footer*/
+ footer{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+   
+ }
+ footer h5{
+    margin-top: 0;
+ }
+ footer .left-content .info nav{
+    display: flex;
+    gap: 1rem;
+    
+ }
+ footer .left-content p{
 
-.social-media h6{
-    font-size: 0.5rem; 
+ }
+ .right-content {
+    min-width: 200px;
+ }
+ .right-content img{
+    height: 3rem;
+    width: 9rem;
+    border-radius: 11px;
+ }
+ .middle-content{
+min-width: 120px;
+ }
+ .middle-content .logo {
+ display: flex;
+ justify-content: flex-start;
+ flex-direction: row;
+ gap: 0.5rem;
 
-}
-.mobile-apps {
-    display: flex; 
-    align-items: center;
-    gap: 10px; 
-    font-size: 0.8rem; 
-}
-.mobile-apps i {
-    font-size: 1rem; 
-    color: gray; 
-}
-@media(max-width: 500px){
+ }
+ .middle-content .logo i{
+    font-size: 1.5rem;
+ }
+ .scroll-container {
+     /* Div elementinin yüksekliği */
+    overflow-y: auto; /* Dikey kaydırma çubuğu oluştur */
+  }
+
+
+
+ @media (max-width:500px){
     header{
-        flex-wrap: wrap ;
+        flex-wrap: wrap;
     }
     header nav{
-        order:1;
-        flex-direction: row;
-    }
+        order: 1;
+        gap: 2rem;
+        width: 100%;
+        justify-content: center;
+        margin-top: 1.2rem;
     
-}
+    }
+    .main-movie{
+        width: 90%;
+    }
+    footer{
+      
+        flex-wrap: wrap;
+       text-align: center;
+    }
+    footer nav{
+        justify-content: center;
+    }
+    .middle-content,.right-content{
+        width: 100%;
+        text-align: center;
+    }
+    .middle-content .logo{
+        justify-content: center;
+    }
+   
+ }
